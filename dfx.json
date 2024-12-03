@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "advent-of-code-2024-backend": {
+      "main": "src/advent-of-code-2024-backend/main.mo",
+      "type": "motoko"
+    },
+    "advent-of-code-2024-frontend": {
+      "dependencies": [
+        "advent-of-code-2024-backend"
+      ],
+      "source": [
+        "src/advent-of-code-2024-frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "advent-of-code-2024-frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
